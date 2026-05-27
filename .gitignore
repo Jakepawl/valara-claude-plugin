@@ -1,0 +1,21 @@
+# OS noise
+.DS_Store
+Thumbs.db
+
+# Editor temp
+*.swp
+*.swo
+*~
+.vscode/
+.idea/
+
+# Local secrets (we don't expect any but defense in depth)
+.env
+.env.local
+*.pem
+*.key
+
+# Build artifacts (this plugin is pure markdown + JSON; no build)
+dist/
+build/
+node_modules/
