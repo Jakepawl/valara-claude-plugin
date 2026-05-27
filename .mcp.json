@@ -1,0 +1,9 @@
+{
+  "mcpServers": {
+    "valara": {
+      "type": "http",
+      "url": "https://valara.cloud/.well-known/mcp-configuration",
+      "description": "Valara real-estate dashboard. OAuth 2.1 + PKCE required on first connect; the consent screen lets you pick read/write scopes and toggle sandbox mode."
+    }
+  }
+}

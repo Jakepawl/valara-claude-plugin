@@ -1,0 +1,21 @@
+{
+  "name": "valara-marketplace",
+  "description": "Marketplace for the Valara plugin (Claude Code/Cowork).",
+  "owner": {
+    "name": "Jacob Allen Media",
+    "email": "support@jacoballenmedia.com",
+    "url": "https://valara.cloud"
+  },
+  "plugins": [
+    {
+      "name": "valara",
+      "description": "Connect Claude to your Valara real-estate dashboard.",
+      "version": "0.1.0",
+      "source": "./",
+      "author": {
+        "name": "Jacob Allen Media",
+        "email": "support@jacoballenmedia.com"
+      }
+    }
+  ]
+}
