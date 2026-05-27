@@ -8,7 +8,9 @@ All notable changes to this plugin land here. Format: [Keep a Changelog](https:/
 - Initial plugin manifest + marketplace.json + .mcp.json pointing at https://valara.cloud
 - 10 skill skeletons (connect-and-onboard, whoami-and-context, browse-my-properties, deep-dive-on-one-property, tour-state-and-next-steps, check-shoot-availability, triage-my-inbox, pending-actions-and-approvals, draft-property-content, troubleshoot-my-connection)
 - 2 slash commands (/valara-status, /valara-connect)
-- CI workflow with line-limit + forbidden-phrase + manifest-validation gates
+- Local pre-push git hook (`.githooks/pre-push`) running line-limit + forbidden-phrase + manifest-validation gates + auto-sync of skills into the sibling `valara-codex-plugin` clone when skill changes ship
+- `scripts/install-hooks.sh` (one-time setup pointing git at `.githooks/`)
+- `scripts/release.sh` (manual release flow, also a `DRY_RUN=1`-able local validator)
 - MIT license
 
 ### Architecture
