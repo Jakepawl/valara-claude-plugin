@@ -2,6 +2,12 @@
 
 All notable changes to this plugin land here. Format: [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 
+## [0.1.2] - 2026-07-06
+
+### Fixed
+- MCP server URL repointed from the legacy `https://valara.cloud/api/v1/mcp/api` transport (removed server-side 2026-06-23) to the canonical `https://valara.cloud/api/v1/mcp` in `.mcp.json` + `.claude-plugin/plugin.json`. The legacy URL now returns HTTP 403, which broke OAuth connect: consent completed in the browser but no access token was ever issued, so connections never appeared on /manage/integrations/ai.
+- `.claude-plugin/marketplace.json` version pin aligned with `plugin.json` (was stuck at 0.1.0 while plugin.json said 0.1.1).
+
 ## [0.1.0] - 2026-05-27
 
 ### Added

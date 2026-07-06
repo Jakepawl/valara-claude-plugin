@@ -1,7 +1,7 @@
 {
   "name": "valara",
   "description": "Connect Claude to your Valara real-estate dashboard: browse tours, triage your AI inbox, check shoot availability, and draft property captions.",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "author": {
     "name": "Jacob Allen Media",
     "email": "support@jacoballenmedia.com",
@@ -22,7 +22,7 @@
   "mcpServers": {
     "valara": {
       "type": "http",
-      "url": "https://valara.cloud/api/v1/mcp/api"
+      "url": "https://valara.cloud/api/v1/mcp"
     }
   }
 }
