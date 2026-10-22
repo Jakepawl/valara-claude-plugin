@@ -2,6 +2,11 @@
 
 All notable changes to this plugin land here. Format: [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 
+## [0.1.3] - 2026-10-22
+
+### Changed
+- Platform host moved from valara.cloud to valara.si: MCP server URL is now `https://valara.si/api/v1/mcp` (`.mcp.json` and the plugin manifest), and all links, homepage and onboarding text use valara.si. valara.cloud still answers, but a connector added here now authorizes against valara.si, so existing users are asked to sign in again after updating the plugin.
+
 ## [0.1.2] - 2026-07-06
 
 ### Fixed

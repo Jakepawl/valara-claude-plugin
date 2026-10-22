@@ -4,13 +4,13 @@
   "owner": {
     "name": "Jacob Allen Media",
     "email": "support@jacoballenmedia.com",
-    "url": "https://valara.cloud"
+    "url": "https://valara.si"
   },
   "plugins": [
     {
       "name": "valara",
       "description": "Connect Claude to your Valara real-estate dashboard.",
-      "version": "0.1.2",
+      "version": "0.1.3",
       "source": "./",
       "author": {
         "name": "Jacob Allen Media",

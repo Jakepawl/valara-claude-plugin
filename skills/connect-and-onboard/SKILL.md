@@ -20,8 +20,8 @@ Guide the user through the OAuth 2.1 + PKCE consent flow that authorizes the Val
 This skill runs BEFORE any Valara MCP tool works, so it does not call tools itself. Once consent is granted, hand off to whichever workflow skill matches what the user originally asked for (e.g. [[browse-my-properties]], [[triage-my-inbox]]).
 
 ## Steps the user takes
-1. In Claude Code: run `/valara-connect` (the slash command). In Claude Desktop / Claude.ai / mobile: open Settings -> Connectors -> Add custom connector and paste `https://valara.cloud/.well-known/mcp-configuration`.
-2. A browser tab opens at valara.cloud's login page. The user signs in with their Valara account.
+1. In Claude Code: run `/valara-connect` (the slash command). In Claude Desktop / Claude.ai / mobile: open Settings -> Connectors -> Add custom connector and paste `https://valara.si/.well-known/mcp-configuration`.
+2. A browser tab opens at valara.si's login page. The user signs in with their Valara account.
 3. The consent screen shows the requested scopes + a Sandbox-mode checkbox (default ON for first-time users).
 4. The user ticks the scopes they want and clicks Allow.
 
