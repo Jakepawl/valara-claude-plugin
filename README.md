@@ -1,13 +1,13 @@
 # Valara - Claude Plugin
 
-Connect Claude Code, Cowork, or any Claude product to your [Valara](https://valara.cloud) real-estate dashboard.
+Connect Claude Code, Cowork, or any Claude product to your [Valara](https://valara.si) real-estate dashboard.
 
 ## What you get
 
 - Browse your tours, check schedule, triage notifications, draft listing copy - all from chat
 - OAuth 2.1 + PKCE with per-tool scope picking
 - Sandbox / live mode toggle (sandbox is the default for first-time users)
-- Per-user audit trail at https://valara.cloud (every tool call logged with your name + agency)
+- Per-user audit trail at https://valara.si (every tool call logged with your name + agency)
 
 ## Install in Claude Code / Cowork
 
@@ -32,13 +32,13 @@ Then in any chat, run `/valara-connect` to authorize. The first tool call will p
 No plugin needed - paste this URL into Settings -> Connectors -> Add custom connector:
 
 ```
-https://valara.cloud/.well-known/mcp-configuration
+https://valara.si/.well-known/mcp-configuration
 ```
 
 Or use this one-click install link:
 
 ```
-https://claude.ai/customize/connectors?modal=add-custom-connector&connectorName=Valara&connectorUrl=https%3A%2F%2Fvalara.cloud%2F.well-known%2Fmcp-configuration
+https://claude.ai/customize/connectors?modal=add-custom-connector&connectorName=Valara&connectorUrl=https%3A%2F%2Fvalara.si%2F.well-known%2Fmcp-configuration
 ```
 
 ## What's inside
@@ -63,7 +63,7 @@ The plugin is a thin wrapper. The rich agent guidance ships server-side with eac
 
 ## Privacy
 
-This plugin only stores its manifests + skill descriptions locally - it doesn't transmit anything itself. All Valara queries go to `valara.cloud` over HTTPS with your OAuth token; tokens are stored in your OS keychain by Claude Code. See [Valara's privacy policy](https://valara.cloud/legal/privacy) for what the dashboard does with your data.
+This plugin only stores its manifests + skill descriptions locally - it doesn't transmit anything itself. All Valara queries go to `valara.si` over HTTPS with your OAuth token; tokens are stored in your OS keychain by Claude Code. See [Valara's privacy policy](https://valara.si/legal/privacy) for what the dashboard does with your data.
 
 ## License
 
@@ -71,4 +71,4 @@ MIT - see [LICENSE](./LICENSE).
 
 ## Maintainer
 
-[Jacob Allen Media](https://valara.cloud) - support@jacoballenmedia.com
+[Jacob Allen Media](https://valara.si) - support@jacoballenmedia.com

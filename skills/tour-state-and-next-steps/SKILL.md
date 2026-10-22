@@ -17,7 +17,7 @@ Translate a tour's current state into a clear "here's what's blocking it / here'
 1. `get_tour_details(tour_number=<n>)` - primary call.
 
 ## Output format
-Two short paragraphs: "Where it is" + "What's next". If the next step requires the dashboard UI (not an MCP tool), include the deep link `https://valara.cloud/manage/tours/edit/<tour_number>`.
+Two short paragraphs: "Where it is" + "What's next". If the next step requires the dashboard UI (not an MCP tool), include the deep link `https://valara.si/manage/tours/edit/<tour_number>`.
 
 ## When the server returns _assistant_hint
 `interpretation` carries the canonical state-machine narration - surface it verbatim. `format_hint` confirms the two-paragraph structure.
