@@ -2,6 +2,15 @@
 
 All notable changes to this plugin land here. Format: [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 
+## [0.1.4] - 2026-11-05
+
+### Fixed
+- `connect-and-onboard` SKILL.md: quoted the `description` frontmatter value. The unquoted colon made the YAML fail to parse, so the skill loaded with empty metadata.
+
+### Changed
+- Added `privacyPolicyUrl` to `plugin.json`.
+- README rewritten for public distribution: removed the private-repo install steps and added plain-language data handling and scope disclosures for the plugin directory.
+
 ## [0.1.3] - 2026-10-22
 
 ### Changed

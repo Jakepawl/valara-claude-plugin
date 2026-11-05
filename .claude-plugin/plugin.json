@@ -1,13 +1,14 @@
 {
   "name": "valara",
   "description": "Connect Claude to your Valara real-estate dashboard: browse tours, triage your AI inbox, check shoot availability, and draft property captions.",
-  "version": "0.1.3",
+  "version": "0.1.4",
   "author": {
     "name": "Jacob Allen Media",
     "email": "support@jacoballenmedia.com",
     "url": "https://valara.si"
   },
   "homepage": "https://valara.si",
+  "privacyPolicyUrl": "https://valara.si/legal/privacy",
   "repository": "https://github.com/Jakepawl/valara-claude-plugin",
   "license": "MIT",
   "keywords": [

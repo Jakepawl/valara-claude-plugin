@@ -11,15 +11,6 @@ Connect Claude Code, Cowork, or any Claude product to your [Valara](https://vala
 
 ## Install in Claude Code / Cowork
 
-This repo is PRIVATE. Before running `claude plugin marketplace add`, authenticate the GitHub CLI so Claude can clone it:
-
-```bash
-gh auth login   # interactive; needs the 'repo' scope
-# OR set GITHUB_TOKEN in your shell env to a token with 'repo' scope
-```
-
-Then install:
-
 ```bash
 claude plugin marketplace add Jakepawl/valara-claude-plugin
 claude plugin install valara@valara-marketplace
@@ -47,7 +38,11 @@ https://claude.ai/customize/connectors?modal=add-custom-connector&connectorName=
 - 2 slash commands (`/valara-status`, `/valara-connect`)
 - `.mcp.json` pointing at the hosted Valara MCP server
 
-The plugin is a thin wrapper. The rich agent guidance ships server-side with each tool response (see `_assistant_hint` in the JSON), so updates land via the Valara backend - no plugin re-install needed.
+The plugin is a thin wrapper. It contains only markdown and JSON, no executable code, and runs nothing on your machine. Guidance for how Claude should present results ships server-side with each tool response (see `_assistant_hint` in the JSON), so updates land via the Valara backend - no plugin re-install needed. That guidance only affects how results are described to you; it cannot grant additional access.
+
+## Account required
+
+You need a Valara account. Sign up or sign in at https://valara.si. Without one, the connection step will not complete.
 
 ## Roles supported
 
@@ -61,14 +56,26 @@ The plugin is a thin wrapper. The rich agent guidance ships server-side with eac
 | `assistant` | Tours via your parent agent (writes route through them for approval) |
 | `viewer` | Read-only access to shared tours |
 
-## Privacy
+## Permissions and scopes
 
-This plugin only stores its manifests + skill descriptions locally - it doesn't transmit anything itself. All Valara queries go to `valara.si` over HTTPS with your OAuth token; tokens are stored in your OS keychain by Claude Code. See [Valara's privacy policy](https://valara.si/legal/privacy) for what the dashboard does with your data.
+When you connect, Valara's consent screen lists the scopes requested and lets you tick only the ones you want. Scopes cover reading tours, scheduling and media, and optional write actions (such as tour updates, scheduling, social posting, and billing). Sandbox mode is on by default for first-time users, so nothing touches live data until you turn it off. You can disconnect at any time from your Valara account or from Claude's connector settings.
+
+The skills in this plugin ask Claude to confirm with you before bulk actions (for example marking many notifications read) and never to publish content without your explicit approval.
+
+## Privacy and data handling
+
+- The plugin itself stores nothing and sends nothing. It is manifests and skill text.
+- When you use it, Claude sends tool calls to `https://valara.si/api/v1/mcp` over HTTPS with your OAuth token. Responses can include property, scheduling, client, and notification data you already have access to in Valara.
+- The only network destination is valara.si. The plugin does not contact any other service.
+- OAuth tokens are stored by your Claude client.
+- Every tool call is logged in your Valara audit trail.
+- Retention and handling of Valara account data are covered in [Valara's privacy policy](https://valara.si/legal/privacy).
+- Valara is a business tool for real-estate professionals and is not intended for people under 18.
+
+## Support
+
+[Jacob Allen Media](https://valara.si) - support@jacoballenmedia.com
 
 ## License
 
 MIT - see [LICENSE](./LICENSE).
-
-## Maintainer
-
-[Jacob Allen Media](https://valara.si) - support@jacoballenmedia.com

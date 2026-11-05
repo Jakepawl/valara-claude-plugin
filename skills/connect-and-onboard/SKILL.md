@@ -1,6 +1,6 @@
 ---
 name: connect-and-onboard
-description: First-run setup for Valara: open the consent URL, log in, tick scopes, click Allow. Triggers when the user mentions Valara without an active connection or when any Valara tool returns 401.
+description: "First-run setup for Valara: open the consent URL, log in, tick scopes, click Allow. Triggers when the user mentions Valara without an active connection or when any Valara tool returns 401."
 when_to_use: |
   - "connect Valara"
   - "set up Valara"
