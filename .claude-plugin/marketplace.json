@@ -10,7 +10,7 @@
     {
       "name": "valara",
       "description": "Connect Claude to your Valara real-estate dashboard.",
-      "version": "0.1.4",
+      "version": "0.1.5",
       "source": "./",
       "author": {
         "name": "Jacob Allen Media",

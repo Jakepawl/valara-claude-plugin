@@ -2,6 +2,11 @@
 
 All notable changes to this plugin land here. Format: [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 
+## [0.1.5] - 2026-11-05
+
+### Changed
+- Plugin icon (`assets/icon.png`) replaced with the Valara mark: black V on a white background, 512x512. The previous file was a flat blue placeholder.
+
 ## [0.1.4] - 2026-11-05
 
 ### Fixed
